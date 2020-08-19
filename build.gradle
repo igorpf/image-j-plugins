@@ -1,0 +1,25 @@
+apply plugin: 'io.spring.dependency-management'
+
+buildscript {
+    ext {
+        springDependencyManagementVersion = '1.0.10.RELEASE'
+        imageJVersion = '14.1.0'
+    }
+
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:$springDependencyManagementVersion"
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    group = 'com.igorpf'
+    sourceCompatibility = 1.8
+}
