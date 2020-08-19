@@ -1,7 +1,7 @@
 version '1.0-SNAPSHOT'
 
 dependencies {
-    implementation fileTree(dir: 'lib', include: ['*.jar'])
+    implementation fileTree(dir: '../lib', include: ['*.jar'])
 }
 
 
