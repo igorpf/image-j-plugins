@@ -4,6 +4,14 @@ dependencies {
     implementation fileTree(dir: '../lib', include: ['*.jar'])
 }
 
+jar {
+    archiveName 'Inverter_.jar'
+
+    manifest {
+        attributes 'Version': version
+    }
+}
+
 
 
 
